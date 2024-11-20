@@ -9,5 +9,8 @@ body {
   --secondary-color: #FFD700;
   --accent-color: #E57373;
   --background-color: #1A1A2E;
+
+  color: var(--secondary-color);
+  background-color: var(--background-color);
 }
 

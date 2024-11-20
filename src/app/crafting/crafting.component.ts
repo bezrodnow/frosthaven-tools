@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
-import {ToolbarComponent} from "../base-component/toolbar/toolbar.component";
+import {Component, OnInit} from '@angular/core';
+import {ToolbarService} from "../services/toolbar.service";
 
 @Component({
   selector: 'app-crafting',
   standalone: true,
-  imports: [
-    ToolbarComponent
-  ],
+  imports: [],
   templateUrl: './crafting.component.html',
   styleUrl: './crafting.component.scss'
 })
-export class CraftingComponent {
+export class CraftingComponent implements OnInit {
 
+  constructor(private toolbarService: ToolbarService) {
+  }
+
+  ngOnInit(): void {
+    this.toolbarService.setTitle('Crafting');
+  }
 }
