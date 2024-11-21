@@ -1,1 +1,11 @@
-<p>crafting works!</p>
+<div class="items-grid">
+  @for (item of items; track $index) {
+    <img
+      class="grid-item"
+      [src]="'assets/items/' + item.id.toString().padStart(3, '0') + '.jpg'"
+      [alt]="item.name"
+    >
+  }
+</div>
+
+
