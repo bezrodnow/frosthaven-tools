@@ -398,4 +398,181 @@ export const items: Item[] = [
       [ResourceType.Metal, 1],
     ])
   },
+  {
+    id: 36,
+    name: 'Plumed Helmet',
+    description: 'When you are attacked by an attack with disadvantage, treat all +0 and +1 attack modifier cards as -1.',
+    type: ItemType.Head,
+    usageType: ItemUsageType.Passive,
+    items: [16],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Hide, 1],
+      [ResourceType.Snowthistle, 1],
+    ])
+  },
+  {
+    id: 37,
+    name: 'Ghost Cloak',
+    description: 'During your turn, suffer Damage 3 to perform: Invisible self',
+    type: ItemType.Body,
+    usageType: ItemUsageType.Consumed,
+    items: [3, 114],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Corpsecap, 1],
+    ])
+  },
+  {
+    id: 38,
+    name: "Duelist's Shoes",
+    description: 'During your turn, perform: Movement 2. This movement must end adjacent to an enemy.',
+    type: ItemType.Feet,
+    usageType: ItemUsageType.Spent,
+    items: [13, 113],
+    resources: new Map<ResourceType, number>([])
+  },
+  {
+    id: 39,
+    name: 'Abyss Axe',
+    description: 'During your attack ability, add +3 Attack and Pierce 1 to one attack targeting a Frozen Corpse, Ice Wraith, or Living Doom.',
+    type: ItemType.TwoHands,
+    usageType: ItemUsageType.Spent,
+    items: [29, 101, 112],
+    resources: new Map<ResourceType, number>([])
+  },
+  {
+    id: 40,
+    name: 'Heartstrike Bow',
+    description: 'During your turn, add +1 Attack and +2 Range to one of your ranged attacks.',
+    type: ItemType.TwoHands,
+    usageType: ItemUsageType.Spent,
+    items: [20, 85],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Lumber, 1],
+    ])
+  },
+  {
+    id: 41,
+    name: 'Intricate Charm',
+    description: 'At the start of the scenario, remove one +0 and one -1 attack modifier card from your attack modifier deck.',
+    type: ItemType.Head,
+    usageType: ItemUsageType.Passive,
+    items: [11, 110],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Metal, 1],
+    ])
+  },
+  {
+    id: 42,
+    name: 'Ornate Armor',
+    description: 'On the next two source of Damage from attacks targeting you, gain Shield 2 for the attacks.',
+    type: ItemType.Body,
+    usageType: ItemUsageType.Spent,
+    items: [112],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Metal, 3],
+    ])
+  },
+  {
+    id: 43,
+    name: 'Kicking Boots',
+    description: 'During your melee attack ability, add Push 2 to one attack.',
+    type: ItemType.Feet,
+    usageType: ItemUsageType.Spent,
+    items: [28, 90],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Metal, 1],
+    ])
+  },
+  {
+    id: 44,
+    name: 'Sword of Absolution',
+    description: 'When you would gain Poison or Curse, gain Bless instead.',
+    type: ItemType.OneHand,
+    usageType: ItemUsageType.Spent,
+    items: [24, 108],
+    resources: new Map<ResourceType, number>([])
+  },
+  {
+    id: 45,
+    name: 'Master Scepter',
+    description: 'During your turn, perform: Heal 1 Target 1 ally, Range 2, Ward',
+    type: ItemType.OneHand,
+    usageType: ItemUsageType.Spent,
+    items: [9, 25],
+    resources: new Map<ResourceType, number>([])
+  },
+  {
+    id: 46,
+    name: 'Double-Lens Goggles',
+    description: 'During your attack ability, gain advantage on all attacks and treat all +0 and -1 attack modifier cards as +1 instead.',
+    type: ItemType.Head,
+    usageType: ItemUsageType.Spent,
+    items: [26, 129],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Hide, 1],
+    ])
+  },
+  {
+    id: 47,
+    name: 'Robes of Doom',
+    description: 'On the next two sources of Damage from attacks targeting you, suffer Damage 3 to give the attacker Brittle.',
+    type: ItemType.Body,
+    usageType: ItemUsageType.Spent,
+    items: [27, 119, 162],
+    resources: new Map<ResourceType, number>([])
+  },
+  {
+    id: 48,
+    name: 'Living Shoes',
+    description: "After any ally's heal ability targeting you, perform: Movement 2",
+    type: ItemType.Feet,
+    usageType: ItemUsageType.Passive,
+    items: [13],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Hide, 2],
+      [ResourceType.Flamefruit, 1],
+    ])
+  },
+  {
+    id: 49,
+    name: 'Cruel Dagger',
+    description: "During your melee attack ability, add +1 Damage and Wound to one attack.",
+    type: ItemType.OneHand,
+    usageType: ItemUsageType.Spent,
+    items: [111, 145],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Metal, 1],
+    ])
+  },
+  {
+    id: 50,
+    name: 'Shield of Reciprocity',
+    description: "When you suffer Damage from an attack, gain Shield 1 for the attack and flip this card over. [FLIP] During your melee attack ability, add Pierce 1 to one attack and flip this card over.",
+    type: ItemType.OneHand,
+    usageType: ItemUsageType.Flip,
+    items: [35, 105, 161],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Metal, 1],
+    ])
+  },
+  {
+    id: 51,
+    name: 'Spiked Collar',
+    description: "During your turn, perform: Wound self",
+    type: ItemType.Head,
+    usageType: ItemUsageType.Spent,
+    items: [11],
+    resources: new Map<ResourceType, number>([
+      [ResourceType.Flamefruit, 1],
+    ])
+  },
+  {
+    id: 52,
+    name: 'Laser Lens',
+    description: "During your turn, (Consume Fire) to cause up to two enemies within Range 4 to suffer Damage 1.",
+    type: ItemType.Head,
+    usageType: ItemUsageType.Spent,
+    items: [97, 129],
+    resources: new Map<ResourceType, number>([])
+  },
 ]
