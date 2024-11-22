@@ -1,4 +1,4 @@
-import {Resource, ResourceType} from './resource';
+import {Resource, ResourceType} from '../resource';
 
 export enum ItemType {
   Undefined = 'Undefined',

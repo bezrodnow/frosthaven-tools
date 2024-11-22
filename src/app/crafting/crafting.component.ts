@@ -1,12 +1,15 @@
 import {Component, OnInit} from '@angular/core';
 import {ToolbarService} from "../services/toolbar.service";
-import {items} from "./item-list";
-import {Item} from "./item";
+import {items} from "./item/item-list";
+import {Item} from "./item/item";
+import {ItemComponent} from "./item/item.component";
 
 @Component({
   selector: 'app-crafting',
   standalone: true,
-  imports: [],
+  imports: [
+    ItemComponent
+  ],
   templateUrl: './crafting.component.html',
   styleUrl: './crafting.component.scss'
 })

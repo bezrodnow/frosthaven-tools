@@ -1,5 +1,5 @@
 import {Item, ItemType, ItemUsageType} from "./item";
-import {ResourceType} from "./resource";
+import {ResourceType} from "../resource";
 
 export const items: Item[] = [
   {

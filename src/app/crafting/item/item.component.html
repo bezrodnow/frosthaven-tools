@@ -1,0 +1,10 @@
+@if (item()){
+  <div class="card-item">
+    <div class="card-id">{{ item()!.id }}</div>
+    <img
+      class="card-image"
+      [src]="'assets/items/' + item()!.id.toString().padStart(3, '0') + '.jpg'"
+      [alt]="item()!.name"
+    >
+  </div>
+}
