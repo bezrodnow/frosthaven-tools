@@ -1,10 +1,13 @@
 <div class="items-grid">
   @for (item of items; track $index) {
-    <img
-      class="grid-item"
-      [src]="'assets/items/' + item.id.toString().padStart(3, '0') + '.jpg'"
-      [alt]="item.name"
-    >
+    <div class="card-item">
+      <div class="card-id">{{ item.id }}</div>
+      <img
+        class="card-image"
+        [src]="'assets/items/' + item.id.toString().padStart(3, '0') + '.jpg'"
+        [alt]="item.name"
+      >
+    </div>
   }
 </div>
 
