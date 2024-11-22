@@ -1,6 +1,21 @@
 <div class="items-grid">
-  @for (item of items; track $index) {
-    <app-item [item]="item"/>
+  @for (item of items(); track $index) {
+    @if (selectedItem() && $index === (selectedItem()!.id - 1 - ((selectedItem()!.id - 1) % 4))) {
+      <div class="items-grid required-items">
+        @for (item of requiredItems(); track $index) {
+          <app-item [item]="item"/>
+        }
+      </div>
+    }
+    @if (item.items.length > 0) {
+      <app-item
+        [ngClass]="{ 'selected-item': item === selectedItem() }"
+        [item]="item"
+        (onItemClick)="selectItem(item)"
+      />
+    } @else {
+      <app-item [item]="item"/>
+    }
   }
 </div>
 

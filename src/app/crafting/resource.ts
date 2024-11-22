@@ -8,6 +8,7 @@ export enum ResourceType {
   Flamefruit = "Flamefruit",
   Rockroot = "Rockroot",
   Snowthistle = "Snowthistle",
+  Gold = "Gold ",
 }
 
 export class Resource {

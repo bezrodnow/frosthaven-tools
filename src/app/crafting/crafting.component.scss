@@ -1,10 +1,18 @@
 .items-grid {
+  grid-column: span 4;
   padding: 1rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
+}
 
-  @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.required-items {
+  outline: var(--accent-color) solid 1px;
+  border-radius: var(--item-card-radius);
+}
+
+.selected-item {
+  outline: var(--accent-color) solid 2px;
+  outline-offset: -2px;
+  border-radius: var(--item-card-radius);
 }

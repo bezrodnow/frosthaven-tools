@@ -1,8 +1,11 @@
 @if (item()){
-  <div class="card-item">
+  <div class="card-item" (click)="doOnCardClick(item()!)">
     <div class="card-id">{{ item()!.id }}</div>
     <img
       class="card-image"
+      [ngClass]="{
+      'clickable': onItemClick.observed
+      }"
       [src]="'assets/items/' + item()!.id.toString().padStart(3, '0') + '.jpg'"
       [alt]="item()!.name"
     >
