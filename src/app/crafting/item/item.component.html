@@ -1,10 +1,14 @@
-@if (item()){
+@if (item()) {
   <div class="card-item" (click)="doOnCardClick(item()!)">
-    <div class="card-id">{{ item()!.id }}</div>
+    <div class="card-overlay">
+      <div class="card-id">{{ item()!.id }}</div>
+      <app-button class="unlock-button" icon="pi pi-eye" rounded></app-button>
+    </div>
     <img
       class="card-image"
       [ngClass]="{
-      'clickable': onItemClick.observed
+        'clickable': onItemClick.observed,
+        'locked': !item()!.unlocked
       }"
       [src]="'assets/items/' + item()!.id.toString().padStart(3, '0') + '.jpg'"
       [alt]="item()!.name"

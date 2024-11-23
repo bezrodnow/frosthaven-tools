@@ -1,18 +1,29 @@
 .card-item {
+  position: relative;
   border-radius: 1rem;
   display: flex;
 
-  .card-id {
+  .card-overlay {
     position: absolute;
-    width: 1.25rem;
-    height: 1.25rem;
-    text-align: center;
-    border-radius: var(--item-card-radius);
-    background-color: var(--primary-color);
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-    opacity: 0.6;
-    line-height: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+
+    .card-id {
+      width: 1.25rem;
+      height: 1.25rem;
+      text-align: center;
+      border-radius: var(--item-card-radius);
+      background-color: var(--primary-color);
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+      opacity: 0.6;
+      line-height: 1.25rem;
+    }
+
+    .unlock-button {
+    }
   }
 
   .card-image {
@@ -20,13 +31,15 @@
     width: 100%;
   }
 
+  .locked {
+    filter: brightness(0);
+  }
 
-}
+  .clickable {
+    cursor: pointer;
 
-.clickable {
-  cursor: pointer;
-
-  &:hover {
-    outline: 1px solid var(--secondary-color);
+    &:hover {
+      outline: 1px solid var(--secondary-color);
+    }
   }
 }

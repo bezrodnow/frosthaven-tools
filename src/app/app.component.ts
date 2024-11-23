@@ -7,7 +7,12 @@ import {ToolbarService} from "./services/toolbar.service";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ToolbarComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    ToolbarComponent,
+  ],
+  providers: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
