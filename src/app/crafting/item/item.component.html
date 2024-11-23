@@ -2,7 +2,10 @@
   <div class="card-item" (click)="doOnCardClick(item()!)">
     <div class="card-overlay">
       <div class="card-id">{{ item()!.id }}</div>
-      <app-button class="unlock-button" icon="pi pi-eye" rounded></app-button>
+      @if (!item()!.unlocked) {
+        <app-button (click)="unlockItem($event, item()!)" class="unlock-button" icon="pi pi-eye" rounded></app-button>
+      }
+      <span></span>
     </div>
     <img
       class="card-image"

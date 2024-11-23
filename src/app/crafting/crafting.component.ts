@@ -1,7 +1,7 @@
 import {Component, OnInit, signal} from '@angular/core';
 import {ToolbarService} from "../services/toolbar.service";
 import {items} from "./item/item-list";
-import {Item} from "./item/item";
+import {Item, UNLOCKED_ITEMS_SOTRAGE_KEY} from "./item/item";
 import {ItemComponent} from "./item/item.component";
 import {NgClass} from "@angular/common";
 
@@ -24,7 +24,12 @@ export class CraftingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.toolbarService.setTitle('Crafting');
+    this.toolbarService.setTitle('Crafting')
+    const unlockedItems: number[] = JSON.parse(localStorage.getItem(UNLOCKED_ITEMS_SOTRAGE_KEY) || '[]')
+    items.forEach((item: Item) => {
+      if (unlockedItems.includes(item.id))
+        item.unlocked = true;
+    })
     this.items.set(items);
   }
 

@@ -1,4 +1,4 @@
-import {Resource, ResourceType} from '../resource';
+import {ResourceType} from '../resource';
 
 export enum ItemType {
   Undefined = 'Undefined',
@@ -28,3 +28,5 @@ export class Item {
   items: number[] = []
   resources: Map<ResourceType, number> = new Map()
 }
+
+export const UNLOCKED_ITEMS_SOTRAGE_KEY = 'unlocked-items'

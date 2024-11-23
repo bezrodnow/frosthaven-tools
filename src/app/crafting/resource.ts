@@ -10,7 +10,3 @@ export enum ResourceType {
   Snowthistle = "Snowthistle",
   Gold = "Gold ",
 }
-
-export class Resource {
-  id: string = ''
-}

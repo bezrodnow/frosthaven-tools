@@ -23,6 +23,10 @@
     }
 
     .unlock-button {
+      margin-top: 1rem;
+      &::ng-deep .p-button:focus {
+        box-shadow: none;
+      }
     }
   }
 
